@@ -18,18 +18,20 @@ const Statistics = ({ books }) => {
   }
 
   return (
-    <div className='stats-container'>
+    <>
       <h3>Summary Statistics</h3>
-      <div className='stats-card'>
-        <p>Total Books: {totalBooks}</p> {/* this represents the total number books listed for ACOTAR */}
+      <div className='stats-container'>
+        <div className='stats-card'>
+          <p>Total Books: {totalBooks}</p> {/* this represents the total number books listed for ACOTAR */}
+        </div>
+        <div className='stats-card'>
+          <p>Earliest Publication Year: {earliestYear}</p> {/* this represents the earliest year that was published from the list */}
+        </div>
+        <div className='stats-card'>
+          <p>Most Common Author: {mostCommonAuthor}</p> {/* this represents the author that pops up the most from the list (mode) */}
+        </div>
       </div>
-      <div className='stats-card'>
-        <p>Earliest Publication Year: {earliestYear}</p> { /* this represents the earliest year that was published from the list */}
-      </div>
-      <div className='stats-card'>
-        <p>Most Common Author: {mostCommonAuthor}</p> {/* this represents the author that pops up the most from the list (mode) */}
-      </div>
-    </div>
+    </>
   );
 };
 

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import './App.css';
 import Statistics from './components/Statistics';
+import Navbar from './components/NavBar';
 
 function App() {
   const [books, setBooks] = useState([]);
@@ -32,16 +33,19 @@ function App() {
   }, [searchBook, authorFilter, yearFilter, books]);
 
   return (
-    <div>
-      <h1>Book Search</h1>
+    <div className='whole-page'>
+      <Navbar />
+      <h1>A Court of Thorn and Roses Search Results</h1>
       <Statistics books={filteredBooks} />
+      <br></br>
       <input
         type="text"
         placeholder="Search books..."
         value={searchBook}
         onChange={(e) => setSearchBook(e.target.value)}
+        className='input-container'
       />
-      <select value={authorFilter} onChange={(e) => setAuthorFilter(e.target.value)}>
+      <select value={authorFilter} onChange={(e) => setAuthorFilter(e.target.value)} className='input-container'>
         <option value="">Filter by author...</option>
         {books.map(book => (
           book.author_name && book.author_name.map((author, index) => (
@@ -49,7 +53,7 @@ function App() {
           ))
         ))}
       </select>
-      <select value={yearFilter} onChange={(e) => setYearFilter(e.target.value)}>
+      <select value={yearFilter} onChange={(e) => setYearFilter(e.target.value)} className='input-container'>
         <option value="">Filter by year...</option>
         {books.map(book => (
           book.first_publish_year && <option key={book.first_publish_year} value={book.first_publish_year}>{book.first_publish_year}</option>
