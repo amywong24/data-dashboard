@@ -2,7 +2,8 @@
 
 Submitted by: **Amy Wong**
 
-This web app: **insert description**
+This web app: **This dashboard displays the search results from A Court of Thorns and Roses from the Open Library API. It includes
+the search results, summary statistics, and certain features such as search and filter.**
 
 Time spent: **X** hours spent in total
 
@@ -13,10 +14,10 @@ The following **required** functionality is completed:
 - [x] **The list displays a list of data fetched using an API call**
 - [x] **Data uses the useEffect React hook and async/await syntax**
 - [x] **The app dashboard includes at least three summary statistics about the data such as**
-  - [ ] *the total number books listed for ACOTAR*
-  - [ ] *the earliest year that was published from the list*
-  - [ ] *the author that pops up the most from the list (mode)*
-- [ ] **A search bar allows the user to search for an item in the fetched data**
+  - [x] *the total number books listed for ACOTAR*
+  - [x] *the earliest year that was published from the list*
+  - [x] *the author that pops up the most from the list (mode)*
+- [x] **A search bar allows the user to search for an item in the fetched data**
 - [ ] **Multiple different filters (2+) allow the user to filter items in the database by specified categories**
 
 The following **optional** features are implemented:

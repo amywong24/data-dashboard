@@ -13,16 +13,22 @@ const Statistics = ({ books }) => {
       acc[val] = (acc[val] || 0) + 1;
       return acc;
     }, {});
-  
+
     return Object.keys(frequencyMap).reduce((a, b) => frequencyMap[a] > frequencyMap[b] ? a : b);
   }
 
   return (
-    <div>
+    <div className='stats-container'>
       <h3>Summary Statistics</h3>
-      <p>Total Books: {totalBooks}</p> {/* this represents the total number books listed for ACOTAR */}
-      <p>Earliest Publication Year: {earliestYear}</p> { /* this represents the earliest year that was published from the list */}
-      <p>Most Common Author: {mostCommonAuthor}</p> {/* this represents the author that pops up the most from the list (mode) */}
+      <div className='stats-card'>
+        <p>Total Books: {totalBooks}</p> {/* this represents the total number books listed for ACOTAR */}
+      </div>
+      <div className='stats-card'>
+        <p>Earliest Publication Year: {earliestYear}</p> { /* this represents the earliest year that was published from the list */}
+      </div>
+      <div className='stats-card'>
+        <p>Most Common Author: {mostCommonAuthor}</p> {/* this represents the author that pops up the most from the list (mode) */}
+      </div>
     </div>
   );
 };
