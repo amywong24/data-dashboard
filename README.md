@@ -5,7 +5,7 @@ Submitted by: **Amy Wong**
 This web app: **This dashboard displays the search results from A Court of Thorns and Roses from the Open Library API. It includes
 the search results, summary statistics, and certain features such as search and filter.**
 
-Time spent: **X** hours spent in total
+Time spent: **16** hours spent in total
 
 ## Required Features
 
@@ -34,13 +34,14 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/Kfhdw65.gif' title='Video Walkthrough' alt='Video Walkthrough' />
 
 GIF created with LICEcap 
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+I'm still getting used to working with APIs and implementing them to my websites. Though my biggest challenge with this project
+is definitely making sure that the search bar and filters filtered out the results for when a user types a keyword. It geninutely took me more than 3 hours on just that portion of the project.
 
 ## License
 
