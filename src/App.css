@@ -25,45 +25,11 @@ a:hover {
   color: #535bf2;
 }
 
-.input-container {
-  margin-right: 30px;
-  color: black;
-  background-color: white;
-  width: 250px;
-  height: 40px;
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-
-.stats-container {
-  display: flex;
-  gap: 10px 20px;
-  padding-right: 40px;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.stats-card {
-  border-radius: 24px;
-  font-size: 25px;
-  backdrop-filter: blur(2px);
-  background-color: hsla(244, 88%, 50%, 0.458);
-  box-shadow: 0 15px 25px hsla(0, 2%, 50%, .2);
-  width: 200px;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-  color: rgb(255, 255, 255);
-}
-
 /* Navbar styles */
 .nav-bar {
   background-color: white;
   color: black;
-  width: 100vw; /* ensures it stretches across the viewport width */
+  width: 100vw; 
   padding: 1rem 0;
   box-sizing: border-box;
   display: flex;
@@ -93,6 +59,41 @@ a:hover {
     margin-right: 0;
     margin-bottom: 10px;
   }
+}
+
+.input-container {
+  margin-right: 30px;
+  color: black;
+  background-color: white;
+  width: 250px;
+  height: 40px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.stats-container {
+  display: flex;
+  gap: 10px 20px;
+  padding-right: 40px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.stats-card {
+  border-radius: 24px;
+  font-size: 25px;
+  backdrop-filter: blur(2px);
+  background-color: hsla(244, 88%, 50%, 0.458);
+  box-shadow: 0 15px 25px hsla(0, 2%, 50%, .2);
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  color: rgb(255, 255, 255);
 }
 
 h1 {
