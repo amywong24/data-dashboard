@@ -18,11 +18,11 @@ body {
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #ffffff;
   text-decoration: none;
 }
 a:hover {
-  color: #535bf2;
+  color: #78a3ee;
 }
 
 /* Navbar styles */
@@ -48,6 +48,7 @@ a:hover {
 
 .nav-bar li:not(:last-child) {
   margin-right: 10px;
+  color: black;
 }
 
 @media (max-width: 600px) {
