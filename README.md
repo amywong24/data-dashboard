@@ -64,15 +64,15 @@ is definitely making sure that the search bar and filters filtered out the resul
 Submitted by: **Amy Wong**
 
 This web app: **This dashboard displays the search results from A Court of Thorns and Roses from the Open Library API. It includes
-the search results, summary statistics, and certain features such as search and filter.**
+the search results, summary statistics, and certain features such as search and filter. It also displays a bar chart that visualizes the number of books published each year.**
 
-Time spent: **30** hours spent in total
+Time spent: **35** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [ ] **The app includes at least one unique chart developed using the fetched data that tell an interesting story**
+- [x] **The app includes at least one unique chart developed using the fetched data that tell an interesting story**
 - [x] **Clicking on an item in the list view displays more details about it**
 - [x] **Clicking on an item has a direct, unique link to that item's detail view page**
 
@@ -90,7 +90,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://i.imgur.com/e3vKnXw.gif' title='Video Walkthrough' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/xwugXkw.gif' title='Video Walkthrough (Updated)' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with LICEcap 
@@ -101,7 +101,7 @@ GIF created with LICEcap
 
 ## Notes
 
-This project took longer than expected. I'm not done with the project yet. I'm still working on getting the visualization to show up on the site.
+This project took longer than expected. I find that getting the visualization to show up as a bar chart is the hardest challenge I have done. Another difficult challenge would be to make sure that the details show up for every search result. It's messy but I'm grateful that it showed up.
 
 ## License
 

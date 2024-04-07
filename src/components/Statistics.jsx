@@ -1,4 +1,5 @@
 import React from 'react';
+import BookChart from './BookChart';
 
 const Statistics = ({ books }) => {
   if (!books || books.length === 0) return <p>No data available.</p>;
@@ -17,12 +18,6 @@ const Statistics = ({ books }) => {
     return Object.keys(frequencyMap).reduce((a, b) => frequencyMap[a] > frequencyMap[b] ? a : b);
   }
 
-  const data = books.map(book => ({
-    name: book.title,
-    publicationYear: book.first_publish_year || 'N/A',
-    
-  }))
-
   return (
     <>
       <h3>Summary Statistics</h3>
@@ -37,7 +32,7 @@ const Statistics = ({ books }) => {
           <p>Most Common Author: {mostCommonAuthor}</p> {/* this represents the author that pops up the most from the list (mode) */}
         </div>
       </div>
-      <h3>Book Publication Over Time</h3>
+      <BookChart books={books} />
     </>
   );
 };
